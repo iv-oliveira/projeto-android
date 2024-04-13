@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+:root {
+    --cor1:#e5e2c0;
+    --cor2:#114531;
+    --cor3:#003918;
+    --cor4:#5cdf99;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor1);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor3));
+    min-height: 170px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+header > h1 {
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3em;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+header > p {
+    color: white;
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: auto;
+    padding: 0px 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+header > nav {
+    padding: 10px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+nav > a {
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav > a:hover {
+    background-color: var(--cor4);
+    color: var(--cor2);
+    padding: 10px;
+    border-radius: 10px;
+    transition-duration: .5s;
+}
+
+main {
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+}
+
+main p {
+    text-indent: 30px;
+    text-align: justify;
+    margin: 20px 0px;
+    line-height: 1.5em;
+}
+
+main img {
+    width: 100%;
+}
+
+h2 {
+    font-family: 'idroid', Arial, Helvetica, sans-serif;
+    color: var(--cor2);
+    font-size: 2em;
+}
+
+h3 {
+    font-family: 'idroid', Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, var(--cor4), white);
+    color: var(--cor2);
+    padding-left: 10px;
+    font-size: 1.5em;
+}
+
+.negrito {
+    color: var(--cor2);
+}
+
+.links {
+    text-decoration: none;
+    color: var(--cor2);
+    background-color: var(--cor4);
+    font-weight: bold;
+    padding: 2px 5px;
+}
+
+.links::after {
+    content: '\1F517';
+}
+
+.links:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+#bugdroid  {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.video {
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+.video iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+h4 {
+    background-color: var(--cor2);
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+}
+
+aside {
+    background-color: var(--cor4);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+aside ul {
+    list-style-position: inside;  
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0'; /*Código do emoji/espaço/espaço*/
+}
+
+footer {
+    background-color: var(--cor2);
+    color: var(--cor1);
+    text-align: center;
+    padding: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor1);
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
